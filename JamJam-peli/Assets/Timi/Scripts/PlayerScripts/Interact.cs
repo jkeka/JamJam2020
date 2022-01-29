@@ -22,10 +22,6 @@ public class Interact : MonoBehaviour
                     hit.collider.gameObject.GetComponent<MeshRenderer>().enabled = false;
                 }
 
-                if (hit.collider.tag == "Kaappi")
-                {
-                    hit.collider.gameObject.GetComponent<Animation>().Play();
-                }
             }
         }
     }
