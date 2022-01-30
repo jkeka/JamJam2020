@@ -23,7 +23,7 @@ public class AnimaatioSceneManageri : MonoBehaviour
     {
         yield return new WaitForSeconds(22.0f);
         Debug.Log("Aloita peli skene");
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Character");
 
 
     }

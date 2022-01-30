@@ -88,7 +88,27 @@ public class Heite : MonoBehaviour
                 gameManagerScript.audioSourceList[3].Stop();
 
             }
-            
+            if (gameManagerScript.kST == 5)
+            {
+                gameManagerScript.audioSourceList[4].Stop();
+
+            }
+            if (gameManagerScript.kST == 6)
+            {
+                gameManagerScript.audioSourceList[5].Stop();
+
+            }
+            if (gameManagerScript.kST == 7)
+            {
+                gameManagerScript.audioSourceList[6].Stop();
+
+            }
+            if (gameManagerScript.kST == 8)
+            {
+                gameManagerScript.audioSourceList[7].Stop();
+
+            }
+
             Debug.Log("KST " + gameManagerScript.kST);
 
 
@@ -100,7 +120,6 @@ public class Heite : MonoBehaviour
     IEnumerator ViiveMetodi()
     {
         yield return new WaitForSeconds(2.0f);
-        waterEffect.Stop();
 
 
     }
