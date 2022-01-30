@@ -25,50 +25,106 @@ public class GameManager : MonoBehaviour
 
         kST = 0;
 
-        Debug.Log("KST " + kST);
+        //Debug.Log("KST " + kST);
 
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (kST == 0)
         {
             if (aaniBool == true)
             {
 
-                audioSourceList[1].clip = molyList[1];
-                audioSourceList[1].Play();
+                audioSourceList[0].clip = molyList[0];
+                Debug.Log("0 aani");
 
+                if (!audioSourceList[0].isPlaying)
+                    audioSourceList[0].Play();
+
+            }
+            else
+            {
+                audioSourceList[0].Stop();
             }
 
         }
+
         if (kST == 1)
         {
             if (aaniBool == true)
             {
 
-                audioSourceList[2].clip = molyList[2];
-                audioSourceList[2].Play();
-            }
+                audioSourceList[1].clip = molyList[1];
+                Debug.Log("1 aani");
 
+                if (!audioSourceList[1].isPlaying)
+                    audioSourceList[1].Play();
+
+            }
+            else
+            {
+                audioSourceList[1].Stop();
+            }
         }
+
+        
+
+        
+
+        
         if (kST == 2)
         {
             if (aaniBool == true)
             {
 
-                audioSourceList[3].clip = molyList[3];
-                audioSourceList[3].Play();
+                audioSourceList[2].clip = molyList[2];
+                Debug.Log("2 aani");
+
+                if (!audioSourceList[2].isPlaying)
+                    audioSourceList[2].Play();
+
             }
+            else
+            {
+                audioSourceList[2].Stop();
+            }
+
         }
         if (kST == 3)
         {
             if (aaniBool == true)
             {
 
-                audioSourceList[4].clip = molyList[4];
-                audioSourceList[4].Play();
+                audioSourceList[3].clip = molyList[3];
+                Debug.Log("3 aani");
+
+                if (!audioSourceList[3].isPlaying)
+                    audioSourceList[3].Play();
+
+            }
+            else
+            {
+                audioSourceList[3].Stop();
+            }
+        }
+        if (kST == 4)
+        {
+            if (aaniBool == true)
+            {
+
+                audioSourceList[1].clip = molyList[4];
+                Debug.Log("4 aani");
+
+                if (!audioSourceList[4].isPlaying)
+                    audioSourceList[4].Play();
+
+            }
+            else
+            {
+                audioSourceList[4].Stop();
             }
         }
 

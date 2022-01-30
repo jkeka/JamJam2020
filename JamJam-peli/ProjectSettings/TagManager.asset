@@ -9,6 +9,9 @@ TagManager:
   - Kid
   - Kaappi
   - Putki
+  - Katto
+  - Testi
+  - Kananmuna
   layers:
   - Default
   - TransparentFX

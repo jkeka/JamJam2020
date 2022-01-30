@@ -29,7 +29,7 @@ public class GrabIt : MonoBehaviour {
 
 	[SerializeField]
 	[Range(1 ,4)]
-	float m_grabMaxDistance = 10;
+	float m_grabMaxDistance = 6;
 
 	//[SerializeField]
 	//[Range(50,500)]
@@ -81,7 +81,7 @@ public class GrabIt : MonoBehaviour {
 	{
 		if( m_grabbing )
 		{
-			m_targetDistance = 2;
+			m_targetDistance = 1;
 
 			m_targetPos = m_transform.position + m_transform.forward * m_targetDistance;
 
