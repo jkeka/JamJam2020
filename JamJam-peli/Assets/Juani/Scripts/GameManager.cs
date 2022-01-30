@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
             {
 
                 audioSourceList[0].clip = molyList[0];
-                Debug.Log("YLakertaBile aani");
+                //Debug.Log("YLakertaBile aani");
 
                 if (!audioSourceList[0].isPlaying)
                     audioSourceList[0].Play();
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
             {
 
                 audioSourceList[1].clip = molyList[1];
-                Debug.Log("Lapset ulkona aani");
+                //Debug.Log("Lapset ulkona aani");
 
                 if (!audioSourceList[1].isPlaying)
                     audioSourceList[1].Play();
@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
             {
 
                 audioSourceList[6].clip = molyList[2];
-                Debug.Log("Remontti alakerta aani");
+                //Debug.Log("Remontti alakerta aani");
 
                 if (!audioSourceList[6].isPlaying)
                     audioSourceList[6].Play();
@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
             {
 
                 audioSourceList[3].clip = molyList[3];
-                Debug.Log("Seksia");
+                //Debug.Log("Seksia");
 
                 if (!audioSourceList[3].isPlaying)
                     audioSourceList[3].Play();
@@ -115,7 +115,7 @@ public class GameManager : MonoBehaviour
             {
 
                 audioSourceList[4].clip = molyList[4];
-                Debug.Log("Juusto aani");
+                //Debug.Log("Juusto aani");
 
                 if (!audioSourceList[4].isPlaying)
                     audioSourceList[4].Play();
@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
             {
 
                 audioSourceList[5].clip = molyList[5];
-                Debug.Log("Pierua");
+                //Debug.Log("Pierua");
 
                 if (!audioSourceList[5].isPlaying)
                     audioSourceList[5].Play();
@@ -143,13 +143,14 @@ public class GameManager : MonoBehaviour
                 audioSourceList[5].Stop();
             }
         }
+        /*
         if (kST == 6)
         {
             if (aaniBool == true)
             {
 
                 audioSourceList[6].clip = molyList[6];
-                Debug.Log("6 aani");
+                //Debug.Log("6 aani");
 
                 if (!audioSourceList[6].isPlaying)
                     audioSourceList[6].Play();
@@ -160,13 +161,15 @@ public class GameManager : MonoBehaviour
                 audioSourceList[6].Stop();
             }
         }
+        */
+        /*
         if (kST == 7)
         {
             if (aaniBool == true)
             {
 
                 audioSourceList[5].clip = molyList[6];
-                Debug.Log("Pieru aani");
+                //Debug.Log("Pieru aani");
 
                 if (!audioSourceList[5].isPlaying)
                     audioSourceList[5].Play();
@@ -176,9 +179,11 @@ public class GameManager : MonoBehaviour
             {
                 audioSourceList[5].Stop();
             }
+        
         }
+        */
 
-        if (kST == 8)
+        if (kST == 6)
         {
             SceneManager.LoadScene("AnimationScene");
 
@@ -191,7 +196,6 @@ public class GameManager : MonoBehaviour
     public void LisaaYksiKST()
     {
         kST++;
-        Debug.Log(kST);
-    }
+        Debug.Log(kST);a
     */
 }

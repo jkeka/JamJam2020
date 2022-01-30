@@ -13,6 +13,7 @@ public class Heite : MonoBehaviour
     private GameManager gameManagerScript;
 
 
+
     void Start()
     {
 
@@ -52,6 +53,13 @@ public class Heite : MonoBehaviour
 
 
         }
+        if (col.gameObject.CompareTag("Nussimisseina"))
+        {
+            Debug.Log("Seina");
+            Osuma();
+
+
+        }
 
 
 
@@ -80,7 +88,7 @@ public class Heite : MonoBehaviour
             }
             if (gameManagerScript.kST == 3)
             {
-                gameManagerScript.audioSourceList[2].Stop();
+                gameManagerScript.audioSourceList[6].Stop();
 
             }
             if (gameManagerScript.kST == 4)
@@ -103,11 +111,7 @@ public class Heite : MonoBehaviour
                 gameManagerScript.audioSourceList[6].Stop();
 
             }
-            if (gameManagerScript.kST == 8)
-            {
-                gameManagerScript.audioSourceList[7].Stop();
 
-            }
 
             Debug.Log("KST " + gameManagerScript.kST);
 
